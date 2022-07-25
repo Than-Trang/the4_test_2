@@ -29,3 +29,14 @@ $('.the4s_btn_exit').click(function (e) {
   $('.the4s_section_menu').removeClass('the4s_menu_mobible').slideUp(400);
   $('.the4s_overlay').hide(400);
 });
+
+
+
+$('.the4s_arrow_down1').click(function (e) { 
+  $('.the4s_iteml').slideToggle(200);
+});
+
+$('.the4s_arrow_down2').click(function (e) { 
+  $('.the4s_item_usd').slideToggle(200);
+});
+
