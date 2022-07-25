@@ -20,13 +20,6 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 
-//ajax feature
-// $("#the4s_new").click(function(){
-//     $.ajax({url: "feature2.html", success: function(result){
-//       $(".the4s_wrap_feature").html(result);
-//     }});
-//   })
-
 //open_menu
 $('.the4s_btn_menu').click(function (e) { 
     $('.the4s_section_menu').addClass('the4s_menu_mobible').slideDown(400);

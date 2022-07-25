@@ -14,12 +14,18 @@ body{
     font-family: var(--ff);
     font-weight: var(--fw-regular);
 }
+.app{
+    width: 100%;
+    max-width: 1881px;
+    margin: 0 auto;
+}
 .Mw_1640{
     max-width: 1640px;
     width: 100%
 }
 .the4s_top_header{
     background-color: #1c1c1c;
+    justify-content: center;
 }
 .the4s_top_header,.the4s_email, .the4s_sdt, .the4s_contact{
     display: flex;
@@ -29,9 +35,6 @@ body{
     color: #fff;
     font-size: 12px;
     line-height: 2em;
-}
-.the4s_top_header{
-    justify-content: space-between;
 }
 .the4s_section_email, .the4s_sectin_phone{
     display: flex;
@@ -49,17 +52,20 @@ body{
     margin-left: 20px;
     background: #626262;
 }
-.the4s_location .the4s_border_after::after{
-    content: "";
-    width: 1px;
-    height: 12px;
+.the4s_location .the4s_border_after{
+    border-right: 1px solid #626262;
     margin-right: 13px;
-    margin-left: 13px;
-    background: #626262;
+    padding-right: 13px;
 }
 /* .the4s_border_after{
     border-right: 1px solid #626262;
 } */
+.the4s_arrow_down1 , .the4s_arrow_down2  {
+    padding-right: 20px;
+    position: relative;
+    text-transform: uppercase;
+  
+}
 .the4s_arrow_down1::after, .the4s_arrow_down2::after{
     content: "";
     border: 1px solid #fff;
@@ -71,6 +77,9 @@ body{
     -webkit-transform: rotate(135deg);
     margin-left: 6px;
     margin-right: 8px;
+    position: absolute;
+    top: 26%;
+   
 }
 .the4s_contact{
     padding-top: 8px;
@@ -470,10 +479,10 @@ body{
     background: transparent;
 }
 .the4s_section_countdown_wrap .flickity-prev-next-button.previous{
-    left: -1%;
+    left: 10px;
 }
 .the4s_section_countdown_wrap .flickity-prev-next-button.next{
-    right: -1%;
+    right: 10px;
 }
 .the4s_spacing{
     padding-left: 20px;
@@ -1131,10 +1140,20 @@ body{
    .the4s_list_icon_item{
     margin-top: unset;
    }
+   
+    .the4s_top_header{
+        justify-content: space-between;
+    }
 }
 @media screen and (min-width: 1024px) {
     .the4s_btn_menu, .the4s_btn_exit{
         display: none;
+    }
+    .the4s_section_countdown_wrap .flickity-prev-next-button.previous{
+        left: -1%;
+    }
+    .the4s_section_countdown_wrap .flickity-prev-next-button.next{
+        right: -1%;
     }
     .the4s_section_menu{
         display: block;
